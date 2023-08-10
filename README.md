@@ -1,4 +1,3 @@
-==========================
 MK2 - Firmware for Desktop Filament Extruder MK1 by ARTME 3D
 ==========================
 This software has a GPL license.
