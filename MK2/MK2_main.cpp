@@ -722,6 +722,10 @@ void loop()
           
           manage_heater();
           lcd_update();
+          WRITE(BEEPER,HIGH);
+	        delay(1000); //Änderunge 31.05.2020 5.Eichbaum
+          WRITE(BEEPER,LOW);
+          delay(500);
         }
       }
     }
