@@ -693,7 +693,7 @@ void loop()
 		  
 	  }
 	// puller stop when filament stuck for more than 30 secs
-  if  ((extrude_status & ES_AUTO_SET) > 0) {
+  if  ((extrude_status & ES_AUTO_SET) > 0 && !((extrude_status & ES_ENABLE_CLEAR) > 0)) {
     
     if (current_filwidth < sensorRunoutMin || current_filwidth > sensorRunoutMax) {
       // MYSERIAL.println("sensor runout detected");
