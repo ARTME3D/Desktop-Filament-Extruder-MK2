@@ -684,6 +684,14 @@ void loop()
 		  extrude_status= extrude_status & ES_STATS_CLEAR;  //shut down statistics
 		  timeremaining=0;
 		  LCD_MESSAGEPGM(MSG_EXTRUDE_COMPLETE);
+
+      for (int t = 0; t < 3; t++) {
+        WRITE(BEEPER,HIGH);
+	      delay(200); //Änderunge 31.05.2020 5.Eichbaum
+        WRITE(BEEPER,LOW);
+        delay(500);
+      }
+
 	  } else {
 		  
 		  if(puller_feedrate>0)
