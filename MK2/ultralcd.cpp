@@ -311,6 +311,8 @@ static void lcd_extruder_pause()
     
     digitalWrite(CONTROLLERFAN_PIN, 0); //stop fan
     lcd_disable_statistics();
+
+    LCD_MESSAGEPGM(MSG_EXTRUDER_STOPPED);
 }
 static void lcd_extruder_resume()
 {
@@ -321,6 +323,8 @@ static void lcd_extruder_resume()
 	digitalWrite(CONTROLLERFAN_PIN, 1);  //start Fan
     starttime=millis();
     lcd_enable_statistics();
+
+    LCD_MESSAGEPGM(MSG_EXTRUDER_RUNNING);
 }
 
 static void lcd_extruder_automatic()

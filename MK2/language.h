@@ -230,6 +230,8 @@
 	#define MSG_M109_INVALID_EXTRUDER "M109 Invalid extruder "
 	#define MSG_HEATING "Heating..."
 	#define MSG_HEATING_COMPLETE "Heating done.       "
+  #define MSG_EXTRUDER_RUNNING "Extruder running"
+  #define MSG_EXTRUDER_STOPPED "Extruder stopped"
     #define MSG_EXTRUDE_COMPLETE "Extrude Run Complete"
 	#define MSG_BED_HEATING "Bed Heating."
 	#define MSG_BED_DONE "Bed done."
