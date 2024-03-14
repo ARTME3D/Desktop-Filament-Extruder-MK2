@@ -1080,6 +1080,15 @@ void disable_heater()
 }
 
 void max_temp_error(uint8_t e) {
+
+  WRITE(BEEPER,HIGH);
+  delay(1000); //Änderunge 31.05.2020 5.Eichbaum
+  WRITE(BEEPER,LOW);
+  delay(500);
+  WRITE(BEEPER,HIGH);
+  delay(1000); //Änderunge 31.05.2020
+  WRITE(BEEPER,LOW);
+
   disable_heater();
   if(IsStopped() == false) {
     SERIAL_ERROR_START;
