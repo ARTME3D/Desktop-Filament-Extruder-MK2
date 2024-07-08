@@ -233,7 +233,7 @@ static void lcd_status_screen()
         encoderPosition = 0;
     }
     */
-    puller_feedrate += ((float)(int(encoderPosition)))*0.01;  //update puller_feedrate by .01 mm/sec increments
+    puller_feedrate += ((float)(int(encoderPosition)))*0.1;  //update puller_feedrate by .01 mm/sec increments
     encoderPosition = 0;
     
 #endif//ULTIPANEL_FEEDMULTIPLY
